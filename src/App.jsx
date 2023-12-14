@@ -9,17 +9,10 @@ import Home from "./component/Home";
 import Rightbar from "./component/Rightbar";
 
 function App() {
-  // const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
-  // const OpenSidebar = () => {
-  //   setOpenSidebarToggle(!openSidebarToggle);
-  // };
   return (
     <div className="app">
       <div className="grid-container">
-        <Sidebar
-        // openSidebarToggle={openSidebarToggle}
-        // OpenSidebar={OpenSidebar}
-        />
+        <Sidebar />
         <Home />
         <Rightbar />
       </div>

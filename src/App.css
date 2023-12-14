@@ -92,6 +92,10 @@ img {
 .icon:hover {
   color: black;
 }
+
+#my-tooltip {
+  padding: 10px 15px;
+}
 /* sidebar.css start */
 
 /* Home.css start */
