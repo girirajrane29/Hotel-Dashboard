@@ -3,8 +3,6 @@ import { Badge } from "antd";
 import { GoBell } from "react-icons/go";
 import { FaCircleUser } from "react-icons/fa6";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import "react-tooltip/dist/react-tooltip.css";
-import { Tooltip } from "react-tooltip";
 
 const calendarData = {
   days: [1, 2, 3, 4, 5, 6, 7],
