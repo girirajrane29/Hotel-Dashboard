@@ -1,0 +1,293 @@
+/* Fonts Start */
+@font-face {
+  font-family: "regular";
+  src: local(ArchitypeRenner-Regular),
+    url(./Fonts/ArchitypeRenner-Regular.otf) format(treutype);
+}
+@font-face {
+  font-family: "medium";
+  src: local(ArchitypeRenner-Medium),
+    url(./Fonts/ArchitypeRenner-Medium.otf) format(treutype);
+}
+@font-face {
+  font-family: "demi";
+  src: local(ArchitypeRenner-Demi),
+    url(./Fonts/ArchitypeRenner-Demi.otf) format(treutype);
+}
+@font-face {
+  font-family: "bold";
+  src: local(ArchitypeRenner-Bold),
+    url(./Fonts/ArchitypeRenner-Bold.otf) format(treutype);
+}
+/* Fonts Start */
+
+/* Boilerplate Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/* Boilerplate Start */
+
+/* App.css start */
+.app {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3e3de;
+  font-family: "regular", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  grid-template-columns: 5rem auto 25rem;
+}
+/* App.css end */
+
+/* sidebar.css start */
+.left-sidebar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  background-color: #f5f3da;
+  overflow-x: auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.left-sidebar-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.icon {
+  vertical-align: middle;
+  color: grey;
+  line-height: 1px;
+  font-size: 20px;
+}
+
+.icon:hover {
+  color: black;
+}
+/* sidebar.css start */
+
+/* Home.css start */
+.main {
+  display: block;
+  justify-content: space-between;
+  color: #251f49;
+  font-family: "medium";
+  padding: 10px 10px;
+  margin-left: 25px;
+  cursor: context-menu;
+}
+.main p {
+  color: #86858b;
+  font-weight: lighter;
+}
+
+.main-container {
+  overflow-y: auto;
+  width: 100%;
+  margin-left: 14px;
+  padding: 20px 20px;
+}
+
+.main-cards {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 2.5fr 2.5fr 2.5fr;
+  gap: 20px;
+  height: 80px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 8px;
+  border-radius: 10px;
+  background-color: #f5f3da;
+  color: #86858b;
+  cursor: context-menu;
+}
+
+.card-inner {
+  display: flex;
+  align-items: center;
+}
+
+.card-inner img {
+  border-radius: 10%;
+  margin-right: 15px;
+}
+.card-inner h3 {
+  color: #251f49;
+}
+/* CSS for Chart Start */
+.chart {
+  border-radius: 10px;
+  width: 96%;
+  height: 350px;
+  background-color: #f5f3da;
+  margin-left: 30px;
+  padding-bottom: 75px;
+}
+
+.chart p {
+  font-size: larger;
+  font-weight: 900;
+  padding: 20px;
+  color: #251f49;
+  cursor: context-menu;
+}
+/* CSS for Chart Start */
+.book-list {
+  margin-top: 20px;
+  margin-left: 30px;
+  border-radius: 15px;
+  background-color: #f5f3da;
+  cursor: context-menu;
+}
+
+.book-list p {
+  font-weight: 900;
+  font-size: larger;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+}
+
+table {
+  width: 100%;
+  padding: 0px 30px;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+.Paid {
+  height: 25px;
+  width: 45px;
+  margin-left: 30px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  background-color: #ff8400;
+  color: white;
+}
+
+.Pending {
+  height: 25px;
+  width: 60px;
+  margin-left: 25px;
+  padding: 2px 2px;
+  border-radius: 10px;
+  background-color: #ff0000;
+  color: white;
+}
+/* Home.css start */
+
+/* Rightbar.css start */
+.top-right {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  cursor: context-menu;
+}
+
+.bell-circle {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50px;
+  background-color: #f5f3da;
+  cursor: pointer;
+}
+
+.profile {
+  margin: 0px 20px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-icon {
+  line-height: 1px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.drop {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.staff {
+  width: 97%;
+  height: 500px;
+  margin: 35px 12px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f5f3da;
+  cursor: context-menu;
+}
+
+.staff p {
+  font-weight: 900;
+  font-size: larger;
+}
+
+.staff-schedule {
+  width: 100%;
+}
+
+.staff-schedule th {
+  font-weight: 400;
+  color: #86858b;
+}
+
+.staff-schedule p {
+  font-weight: 500;
+  font-size: medium;
+}
+
+.staff-schedule table {
+  cursor: pointer;
+}
+
+.staff-schedule td:hover {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  background-color: grey;
+}
+
+/* Rightbar.css End */
